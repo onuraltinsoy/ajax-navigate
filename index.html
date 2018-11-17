@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Navigate</title>
+
+    <link rel="stylesheet" href="ajax.navigate.min.css">
+
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            height: 1000px;
+        }
+        h1{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            display: inline-block;
+            width: 90%;
+            height: 40px;
+            background: #fff;
+            margin-top: 5px;
+            padding-left: 10%;
+        }
+        li a{
+            color: #333;
+            text-decoration: none;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            font-weight: bold;
+        }
+        .container{
+            width: 80%;
+            display: inline-block;
+            margin: 10%;
+            position: relative;
+        }
+        .bg-earth{
+            background: #00C9FF !important;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF) !important;  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #92FE9D, #00C9FF) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+    </style>
+</head>
+<body class="bg-earth">
+    <div class="container">
+        <h1>Ajax Navigate</h1>
+        <ul>
+            <li><a href="sub.html" class="ajax-navigate" data-direction="right">Sub Page</a></li>
+            <li><a href="sub-2.html" class="ajax-navigate">Sub 2 Page</a></li>
+        </ul>
+    </div>
+<script type="text/javascript" src="ajax.navigate.min.js"></script>
+</body>
+</html>
